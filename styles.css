@@ -1,0 +1,27 @@
+body{
+   text-align: center;
+   margin: auto;
+   background-color: lightcyan;
+}
+
+#quiz-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#output{
+    font-weight: bolder;
+}
+
+#check{
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    background-color: lightgoldenrodyellow;
+
+}
+
+#check:hover{
+    font-weight: bold;
+}
+
