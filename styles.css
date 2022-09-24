@@ -136,3 +136,11 @@ label{
 .head{
     text-align: left;
 }
+
+p{
+    font-weight: bold;
+}
+
+#forms label{
+    font-weight: 300;
+}
