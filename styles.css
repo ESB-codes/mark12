@@ -93,3 +93,15 @@ label{
 #output{
     padding: 1rem;
 }
+
+#area{
+    display: flex;
+    flex-direction: column;
+}
+
+.triangle{
+    padding: 0.3rem;
+    background-color: lightgoldenrodyellow;
+    margin: 1rem;
+    border: 1px solid black;
+}
