@@ -20,7 +20,7 @@ body{
 
 #check{
     padding: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: lightgoldenrodyellow;
     border: 1px solid black;
     cursor: pointer;
@@ -104,4 +104,35 @@ label{
     background-color: lightgoldenrodyellow;
     margin: 1rem;
     border: 1px solid black;
+}
+
+.navbar{
+    background-color:  lightgoldenrodyellow;
+    padding: 1rem;
+}
+
+#active{
+    font-weight: bolder;
+}
+
+.lists{
+    text-align: right;
+}
+
+.components{
+   display: inline;
+   padding: 1rem;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+    font-weight: bold;
+}
+
+.head{
+    text-align: left;
 }
