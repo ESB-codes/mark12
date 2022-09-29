@@ -9,7 +9,20 @@ function calculation(a,b){
 
 function calculateArea(){
     let area= calculation(sides[0].value, sides[1].value)
-    return outputEl.innerText="The area of this triangle is: "+area+" cm square"
+    if (sides[0].value && sides[1].value){
+        if (sides[0].value<0 || sides[1].value<0  )
+        outputEl.innerHTML="please provide positive values"
+
+        else{
+             outputEl.innerText="The area of this triangle is: "+area+" cm square"
+
+        }
+
+    }
+    else{
+        outputEl.innerText="Pls provide both the values"
+
+    }
 }
 
 buttonEl.addEventListener("click", calculateArea)

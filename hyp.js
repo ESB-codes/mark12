@@ -10,8 +10,19 @@ function sumOfSquares(a,b){
 
 function calculateHypotenuse(){
     let sum= sumOfSquares(angle1.value, angle2.value)
-    let hyp= Math.sqrt(sum)
-    return outputEl.innerText="Their Hypotenuse is: "+hyp;
+    if (angle1.value && angle2.value){
+        if (angle1.value<0 || angle2.value<0){
+            outputEl.innerText="please provide positive the values"
+        }
+        else{
+            let hyp= Math.sqrt(sum)
+            return outputEl.innerText="Their Hypotenuse is: "+hyp.toFixed(2);        }
+
+    }
+    else{
+        outputEl.innerText="please provide both the values"
+    }
+    
 }
 
 buttonEl.addEventListener("click", calculateHypotenuse)
