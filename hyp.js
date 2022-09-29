@@ -10,8 +10,11 @@ function sumOfSquares(a,b){
 
 function calculateHypotenuse(){
     let sum= sumOfSquares(angle1.value, angle2.value)
+    
+
+
     if (angle1.value && angle2.value){
-        if (angle1.value<0 || angle2.value<0){
+        if ((angle1.value<0 || angle2.value<0) || (angle1.value==0 || angle2.value==0)){
             outputEl.innerText="please provide positive the values"
         }
         else{
