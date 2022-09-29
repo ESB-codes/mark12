@@ -12,7 +12,7 @@ function isTriangle(){
     let sum=calculateSumOfAngles(Number(inputEl[0].value),Number(inputEl[1].value),Number(inputEl[2].value));
 
     if(Number(inputEl[0].value),Number(inputEl[1].value),Number(inputEl[2].value)){
-        if(Number(inputEl[0].value<0) || Number(inputEl[1].value<0) || Number(inputEl[2].value<0)){
+        if(Number(inputEl[0].value<0) || Number(inputEl[1].value<0) || Number(inputEl[2].value<0) || Number(inputEl[0].value==0) || Number(inputEl[1].value==0) || Number(inputEl[2].value==0)){
             outputEl.innerText="provide positive values"
     
         }

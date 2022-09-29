@@ -10,7 +10,7 @@ function calculation(a,b){
 function calculateArea(){
     let area= calculation(sides[0].value, sides[1].value)
     if (sides[0].value && sides[1].value){
-        if (sides[0].value<0 || sides[1].value<0  )
+        if (sides[0].value<=0 || sides[1].value<=0  )
         outputEl.innerHTML="please provide positive values"
 
         else{
